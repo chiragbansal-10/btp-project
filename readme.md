@@ -1,0 +1,5 @@
+ABSTRACT
+
+In this study, we examine the use of artificial intelligence in predicting stock market trends by developing a forecast model that integrates previous price information with popular technical indicators. We use the XGBoost regression algorithm, a high-performance machine learning methodology that is renowned for its speed and precision, to forecast stock closing prices. The data set provides metrics such as 20-day Simple and Exponential Moving Averages (SMA and EMA), Relative Strength Index (RSI), and MACD, which are typically employed by traders to analyze market trends. Through training and testing against actual market data, our model obtained an R² value of 0.8325, showing high predictive consistency. This outcome indicates that blending AI models and technical analysis is capable of drastically improving forecast precision, providing beneficial insights to both investors and analysts.
+
+Keywords: Stock Prediction, XGBoost, Technical Analysis, RSI, EMA, SMA, MACD, Machine Learning, AI in Finance
