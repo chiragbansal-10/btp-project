@@ -63,7 +63,7 @@ def train_and_evaluate_model(model, X_train, y_train, X_test, y_test, scaler):
     plt.show()
 
 # 🔧 Pipeline Execution
-file_path = 'AI.csv'  # Replace with your actual path
+file_path = 'GOOG.csv'  # Replace with your actual path
 df = load_data_from_csv(file_path)
 X, y, scaler = preprocess_data(df, column='Close')
 train_size = int(len(X) * 0.8)
@@ -74,6 +74,11 @@ X_test, y_test = X[train_size:], y[train_size:]
 model = build_model((X_train.shape[1], 1))
 train_and_evaluate_model(model, X_train, y_train, X_test, y_test, scaler)
 
-# MSE: 13.4596
-# RMSE: 3.6687
-# R²: 0.4083
+# on 1st dataset = AI.csv
+# MSE: 13.4596, RMSE: 3.6687, R²: 0.4083
+
+# on 2nd dataset = GOOG.csv
+# MSE: 51.1594, RMSE: 7.1526, R²: 0.8734
+
+# on 3rd dataset = AAPL1424.csv
+# MSE: 37.9827, RMSE: 6.1630, R²: 0.8910

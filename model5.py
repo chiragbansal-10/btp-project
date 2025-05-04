@@ -6,7 +6,7 @@ import xgboost as xgb
 import talib
 
 # 1. Load CSV
-df = pd.read_csv("AI.csv", parse_dates=["Date"])
+df = pd.read_csv("AAPL1424.csv", parse_dates=["Date"])
 df.sort_values("Date", inplace=True)
 
 # 2. Add technical indicators
@@ -50,4 +50,11 @@ plt.grid(True)
 plt.tight_layout()
 plt.show()
 
+# on 1st dataset = AI.csv
 # MSE: 4.8872, RMSE: 2.2107, R²: 0.8325
+
+# on 2nd dataset = GOOG.csv
+# MSE: 7.4947, RMSE: 2.7376, R²: 0.9813
+
+# on 3rd dataset = AAPL1424.csv
+# MSE: 46.2402, RMSE: 6.8000, R²: 0.8660
